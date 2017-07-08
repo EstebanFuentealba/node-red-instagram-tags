@@ -1,0 +1,37 @@
+{
+  "name": "node-red-instagram-tags",
+  "version": "1.0.0",
+  "description": "Node-RED nodes that get photos tag from Instagram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstebanFuentealba/node-red-instagram-tags.git"
+  },
+  "keywords": [
+    "node-red",
+    "instagram",
+    "tags",
+    "photo"
+  ],
+  "node-red": {
+    "nodes": {
+      "instagram-tag": "instagram.js"
+    }
+  },
+  "author": {
+    "name": "Esteban Fuentealba",
+    "email": "efuentealba@json.cl",
+    "url": "http://json.cl"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EstebanFuentealba/node-red-instagram-tags/issues"
+  },
+  "homepage": "https://github.com/EstebanFuentealba/node-red-instagram-tags#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}

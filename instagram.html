@@ -1,0 +1,40 @@
+<script type="text/x-red" data-template-name="instagram-tag">
+    <div class="form-row">
+        <label for="node-input-tag"><i class="fa fa-tag"></i> <span data-i18n="instagram.label.tag"></span></label>
+        <input type="text" id="node-input-tag" data-i18n="[placeholder]instagram.placeholder.tag">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="instagram.label.name"></span></label>
+        <input type="text" id="node-input-name" data-i18n="[placeholder]instagram.placeholder.name">
+    </div>
+</script>
+<script type="text/x-red" data-help-name="instagram-tag">
+    <p>Get photos from Instagram Tags.</p>
+    
+    <p>This node automatically checks for new content in a user's account every 15 minutes.</p>
+    
+    <p>It can be configured to either retrieve new photos uploaded by the user, or
+    photos the user has liked. Each message sent by the node contains a single
+    photo in its payload, either as a Buffer containing the photo or its URL.</p>
+    
+    <p>When the metadata is available within Instagram's service, the photo's capture time and location
+    are also forwarded in the form of msg.time, msg.lat and msg.lon.</p>
+    
+    <p>Videos are currently not supported and are ignored.</p>
+</script>
+<script type="text/javascript">
+    RED.nodes.registerType('instagram-tag',{
+        category: 'social',
+        color: '#889FB3',
+        defaults: {
+            tag: {value:""},
+            name: {value:""}
+        },
+        inputs:0,
+        outputs:1,
+        icon: "instagram.png",
+        label: function() {
+            return this.name||"instagram-tag";
+        }
+    });
+</script>

@@ -1,0 +1,38 @@
+{
+    "instagram": {
+        "label": {
+            "tag": "Etiqueta",
+            "name": "Nombre"
+        },
+        "placeholder": {
+            "tag": "Javascript",
+            "name":""
+        },
+        "warn": {
+            "image-not-sent": "Instagram node has failed to buffer up an image. Image was not sent.\n__error__\n__response__",
+            "missing-accesstoken": "Missing Instagram access token. Authorization has not been completed before node initialization.",
+            "missing-configuration": "Missing Instagram configuration or credentials. Authorization has not been completed before node initialization.",
+            "userphoto-fetch-fail": "Instagram node has failed to fetch latest user photo : __err__",
+            "ignoring-media": "The Instagram API has not provided all the required data to establish the URL of the photo. Ignoring media.",
+            "not-a-photo": "The most recent media on Instagram is not a photo, therefore it has been ignored.",
+            "not-uploaded-yet": "The user has not uploaded any media to Instagram yet, null payload has been sent",
+            "likedphoto-fetch-fail": "Instagram node has failed to fetch latest liked photo : __err__",
+            "not-liked-photo": "The most recently liked media on Instagram is not a photo, therefore it has been ignored.",
+            "not-liked-yet": "The user has not liked any media on Instagram yet, null payload has been sent",
+            "latest-media-fetch-failed": "Instagram node has failed to fetch latest media : __err__",
+            "media-fetch-failed": "Instagram node has failed to fetch any media",
+            "missing-credentials": "Missing Instagram credentials"
+        },
+        "error": {
+            "csrf-token-mismatch": "CSRF token mismatch, possible cross-site request forgery attempt.",
+            "no-required-code": "The callback from Instagram did not contain a required code",
+            "unexpected-statuscode": "Instagram replied with the unexpected HTTP status code of __statusCode__\nDetails:\n__data__",
+            "request-error": "request error:__err__",
+            "oauth-error": "oauth error: __error__",
+            "no-ui-credentials": "ERROR: Received query from UI without the needed credentials",
+            "no-credentials": "ERROR: no credentials - should never happen",
+            "username-fetch-fail": "Error! Instagram node has failed to fetch the username.",
+            "accesstoken-fetch-fail": "Error! Instagram node has failed to fetch a valid access token."
+        }
+    }
+}
